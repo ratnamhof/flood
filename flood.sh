@@ -145,8 +145,8 @@ function createField(){
             selectionText="  \e[1m${selectionText// /\\e[0m \\e[1m}\e[0m";;
     esac
     infoText=()
-    nrMoves=$((54*nc*(nrColumns+nrRows)/(7*(26+26))))
-    #nrMoves=$((25*nc*(nrColumns+nrRows)/(6*(14+14))))
+    #nrMoves=$((54*nc*(nrColumns+nrRows)/(7*(26+26))))
+    nrMoves=$((25*nc*(nrColumns+nrRows)/(6*(14+14))))
     [ $# -gt 0 ] && seed=$1 || seed=$((RANDOM))
     RANDOM=$seed
     field=()
